@@ -49,12 +49,14 @@ PORT=3000
 
 ---
 
-## Security Notes
+## ผู้พัฒนา (Author)
 
-- **LINE_CHANNEL_ACCESS_TOKEN** และ **LINE_CHANNEL_SECRET** เป็นข้อมูลสำคัญ ห้ามแชร์หรือ commit ลง GitHub  
-- หาก Access Token หลุดหรือถูกเปิดเผย ให้เข้าไปที่ **LINE Developers Console** แล้วกด **Reissue** เพื่อสร้าง token ใหม่ทันที  
-- หลังจาก reissue ต้องอัปเดตค่าใหม่ในไฟล์ `.env` และ restart server  
-- แนะนำให้ใช้ `.gitignore` เพื่อกันไม่ให้ไฟล์ `.env` ถูก push ขึ้น GitHub
+| รายการ     | ข้อมูล |
+|------------|--------|
+| ชื่อ       | นายรัชชานนท์ นกน้อย |
+| ตำแหน่ง   | นักวิชาการคอมพิวเตอร์ |
+| GitHub     | [@ratchanon-noknoy2318](https://github.com/ratchanon-noknoy2318) |
+| LinkedIn   | [linkedin.com/in/ratchanon-noknoy](https://linkedin.com/in/ratchanon-noknoy) |
 
 
 
