@@ -1,7 +1,7 @@
-## ความปลอดภัยและการจัดการเหตุการณ์
+ความปลอดภัยและการจัดการเหตุการณ์
 
-- LINE_CHANNEL_ACCESS_TOKEN และ LINE_CHANNEL_SECRET เป็นข้อมูลสำคัญ ห้ามแชร์หรือ commit ลง GitHub  
-- หาก Access Token หลุดหรือถูกเปิดเผย ให้เข้าไปที่ LINE Developers Console แล้วกด Reissue เพื่อสร้าง token ใหม่ทันที  
-- หลังจาก reissue ต้องอัปเดตค่าใหม่ในไฟล์ `.env` และ restart server  
-- ใช้ `.gitignore` เพื่อกันไม่ให้ไฟล์ `.env` ถูก push ขึ้น GitHub  
-- ควรตรวจสอบ log และแจ้งทีมที่เกี่ยวข้องเมื่อเกิดเหตุการณ์ด้านความปลอดภัย  
+1. LINE_CHANNEL_ACCESS_TOKEN และ LINE_CHANNEL_SECRET เป็นข้อมูลสำคัญ ห้ามแชร์หรือ commit ลง GitHub  
+2. หาก Access Token หลุดหรือถูกเปิดเผย ให้เข้าไปที่ LINE Developers Console แล้วกด Reissue เพื่อสร้าง token ใหม่ทันที  
+3. หลังจาก reissue ต้องอัปเดตค่าใหม่ในไฟล์ `.env` และ restart server  
+4. ใช้ `.gitignore` เพื่อกันไม่ให้ไฟล์ `.env` ถูก push ขึ้น GitHub
+5. ควรตรวจสอบ log และแจ้งทีมที่เกี่ยวข้องเมื่อเกิดเหตุการณ์ด้านความปลอดภัย  
