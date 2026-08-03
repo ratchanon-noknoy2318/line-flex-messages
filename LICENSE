@@ -1,1 +1,16 @@
-Non-commercial use only.
+## 🔒 Security & Inchttps://github.com/ratchanon-noknoy2318/line_oa/community/license/new?branch=mainidents / ความปลอดภัยและการจัดการเหตุการณ์
+
+- **LINE_CHANNEL_ACCESS_TOKEN** และ **LINE_CHANNEL_SECRET** เป็นข้อมูลสำคัญ ห้ามแชร์หรือ commit ลง GitHub  
+  **LINE_CHANNEL_ACCESS_TOKEN** and **LINE_CHANNEL_SECRET** are sensitive credentials. Do not share or commit them to GitHub.  
+
+- หาก Access Token หลุดหรือถูกเปิดเผย ให้เข้าไปที่ **LINE Developers Console** แล้วกด **Reissue** เพื่อสร้าง token ใหม่ทันที  
+  If the Access Token is leaked or exposed, go to **LINE Developers Console** and click **Reissue** to generate a new token immediately.  
+
+- หลังจาก reissue ต้องอัปเดตค่าใหม่ในไฟล์ `.env` และ restart server  
+  After reissuing, update the new value in `.env` and restart the server.  
+
+- แนะนำให้ใช้ `.gitignore` เพื่อกันไม่ให้ไฟล์ `.env` ถูก push ขึ้น GitHub  
+  Use `.gitignore` to prevent `.env` from being pushed to GitHub.  
+
+- ควรมีการตรวจสอบ log และแจ้งทีมที่เกี่ยวข้องเมื่อเกิดเหตุการณ์ด้านความปลอดภัย  
+  Review logs and notify the relevant team when a security incident occurs.  
