@@ -18,7 +18,7 @@
 
 1. Copy the JSON code starting from the `content` field onward.
 2. Import the copied JSON code into the [Flex Message Simulator](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fflex-simulator/) website.
-3. Click **Send** to test the message.
+3. Click **Send** to test the Flex Message.
 4. Verify the result before implementing the actual code.
 5. Connect the application to the webhook, configure the **LINE Access Token** for authentication, and use [ngrok](https://ngrok.com/) to create a public URL for testing the actual webhook flow.
 
