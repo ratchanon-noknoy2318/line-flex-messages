@@ -14,7 +14,7 @@
 ---
 
 
-## How to Use
+## Development Workflow
 
 1. Copy the JSON code starting from the `content` field onward.
 2. Import the copied JSON code into the [Flex Message Simulator](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fflex-simulator/) website.
