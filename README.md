@@ -14,44 +14,9 @@
 ---
 
 
-## Features
-
-* Connect to the LINE Official Account (LINE OA) API
-* Send automated notifications (e.g., appointments and registrations)
-* Support both push messages and reply messages
-* Store data in Google Sheets or a database
-
----
-
-## Requirements
-
-* Node.js (latest version)
-* npm for dependency management
-* LINE Messaging API credentials (from the LINE Developers Console)
-* Google Sheets API key (if using Google Sheets integration)
-* Hosting: Vercel, Netlify, or the hospital's server
-
----
-
 ## How to Use
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/ratchanon-noknoy2318/line_oa.git
-npm install
-npm run dev
-```
-
-2. Create a `.env` file in the root directory of the project and add the following:
-
-```bash
-LINE_CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
-LINE_CHANNEL_SECRET=your_line_channel_secret
-GOOGLE_SHEETS_API_KEY=your_google_sheets_api_key
-PORT=3000
-```
-
+Copy the JSON code from the `content` field onward, import it into the [Flex Message Simulator](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fflex-simulator%2F) website, then click **Send** to test the message before implementing the actual code.
 
 ---
 
