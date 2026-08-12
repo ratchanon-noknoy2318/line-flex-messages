@@ -16,18 +16,28 @@
 
 ## How to Use
 
-Copy the JSON code from the `content` field onward, import it into the [Flex Message Simulator](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fflex-simulator%2F) website, then click **Send** to test the message before implementing the actual code.
+1. Copy the JSON code starting from the `content` field onward.
+2. Import the copied JSON code into the [Flex Message Simulator](https://account.line.biz/login?redirectUri=https%3A%2F%2Fdevelopers.line.biz%2Fflex-simulator/) website.
+3. Click **Send** to test the message.
+4. Verify the result before implementing the actual code.
+5. Connect the application to the webhook, configure the **LINE Access Token** for authentication, and use [ngrok](https://ngrok.com/) to create a public URL for testing the actual webhook flow.
 
 ---
+## Security and Incident Management
 
+1. `LINE_CHANNEL_ACCESS_TOKEN` and `LINE_CHANNEL_SECRET` are sensitive information. Do not share them or commit them to GitHub.
+2. If the Access Token is leaked or exposed, go to the LINE Developers Console and click **Reissue** to generate a new token immediately.
+3. After reissuing the token, update the new value in the `.env` file and restart the server.
+4. Use `.gitignore` to prevent the `.env` file from being pushed to GitHub.
+5. Monitor logs and notify the relevant team members when a security incident occurs.
+
+---
 ## Author
 
 **Ratchanon Noknoy**  
 - GitHub: [ratchanon-noknoy2318](https://github.com/ratchanon-noknoy2318)  
 - LinkedIn: [linkedin.com/in/ratchanon-noknoy](https://linkedin.com/in/ratchanon-noknoy)  
 - Role: Solo Software Engineer
-
-
 
 
 
