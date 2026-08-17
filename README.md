@@ -39,5 +39,25 @@
 - LinkedIn: [linkedin.com/in/ratchanon-noknoy](https://linkedin.com/in/ratchanon-noknoy)  
 - Role: Software Engineer
 
+---
 
 
+## Architecture & Webhook Flow
+
+```mermaid
+flowchart LR
+    U["LINE User"] --> L["LINE Platform"]
+
+    L -->|Webhook Event| NG["ngrok Public URL"]
+    NG -->|Forward Request| APP["Local Application"]
+
+    APP -->|Verify| CS["LINE Channel Secret"]
+    APP -->|Generate| FM["Flex Message"]
+
+    APP -->|Access Token| API["LINE Messaging API"]
+    API -->|Reply Message| L
+
+    L --> U
+```
+
+> **Development Environment:** During local development, `ngrok` is used to expose the local webhook endpoint through a public URL so that the LINE Platform can send webhook events to the application.
