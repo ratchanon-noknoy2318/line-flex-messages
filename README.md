@@ -26,7 +26,7 @@
 ## Architecture & Webhook Flow
 
 ```mermaid
-flowchart LR
+flowchart TD
     U["LINE User"] --> L["LINE Platform"]
 
     L -->|Webhook Event| NG["ngrok"]
